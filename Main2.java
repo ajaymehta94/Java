@@ -82,7 +82,73 @@ public class Main {
        }
         //make a calculator take two number a and BS follow edition subtraction multiplication division or module
        System.out.println("make a calculator take two number a and BS follow edition subtraction multiplication division or module");
-       
+
+        // addition karna
+        System.out.print(" ~  Enter a and b for addition + ");
+        System.out.print(" • a = ");
+        int a = sc.nextInt();
+        System.out.print("  • b = ");
+        int b = sc.nextInt();
+        int sum = a + b;
+        System.out.println("   Sum = " + sum);
+
+        // subtraction karna
+        System.out.print("~   Enter a and b for subtraction - ");
+        System.out.print(" • a = ");
+        a = sc.nextInt();
+        System.out.print(" • b = ");
+        b = sc.nextInt();
+        int sub = a - b;
+        System.out.println("   Difference = " + sub);
+
+        // Multiplication
+        System.out.println("~    Enter your multiplication number *");
+        System.out.print(" • a = ");
+        a = sc.nextInt();
+        System.out.print(" • b = ");
+        b = sc.nextInt();
+        int mul = a * b;
+        System.out.println("   Product = " + mul);
+
+        // division
+        System.out.print("~    Enter your division number / ");
+        System.out.print(" • a = ");
+        a = sc.nextInt();
+        System.out.print(" • b = ");
+        b = sc.nextInt();
+        int div = a / b;
+        System.out.println("   Quotient = " + div);
+
+        // modulus
+        System.out.println("~   Enter your modulus number %");
+        System.out.print(" • a = ");
+        a = sc.nextInt();
+        System.out.print(" • b = ");
+        b = sc.nextInt();
+        int mod = a % b;
+        System.out.println("   Remainder = " + mod);
+        
+        //ask user to enter the number of the month and print the name of the month for example for print 1 January 2 to print a February
+
+        System.out.println("ask user to enter the number of the month and print the name of the month for example for print 1 January 2 to print a February");
+        Switch (button) {
+          case 1 : System.out.println(" january ");
+          case 2 : System.out.println(" February ");
+          case 3 : System.out.println(" March ");
+          case 4 : System.out.println(" april ");
+          case 5 : System.out.println(" may ");
+          case 6 : System.out.println(" june ");
+          case 7 : System.out.println(" july ");
+          case 8 : System.out.println(" August");
+          case 9 : System.out.println(" September");
+          case 10 : System.out.println(" October ");
+          case 11 : System.out.println(" November");
+          case 12 : System.out.println(" December");
+
+          System.out.println(" next part loops ");
+          
+        }
+          
     }
   }
 }
