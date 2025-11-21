@@ -1,154 +1,146 @@
 //package com.tgdajay;
 import java.util.*;
 
-public class Main {
+public class Main2 {
   public static void main(String[] args) {
-    //input by user
-    Scanner Sc = new scanner(System.in);
+    Scanner sc = new Scanner(System.in);
+
+    // Read name
     System.out.println("Enter name");
-    String name = Sc.nextline();
-                    //nextInt();
-                    //nextFleat();
-    System.out.println(name);
+    String name = sc.nextLine();
+    System.out.println("Name: " + name);
 
-    // Variables "a" & "b" and print their Sum up ?
-      System.out.prinln(" a = ");  
-    int= Sc.nextInt();
-    System.out.println(" b = ");
-    int b = Sc.nextInt();
-    int Sum = a + b;
-    System.out.println(Sum);
+    // Sum of two numbers
+    System.out.print("a = ");
+    int a = sc.nextInt();
+    System.out.print("b = ");
+    int b = sc.nextInt();
+    int sum = a + b;
+    System.out.println("Sum = " + sum);
 
-    //CONDITION STATMENT IN JAVA
-     // IF ELSE
-     System.out.println("Age = ");
-    int age = Sc.nextInt();
+    // IF ELSE: age check
+    System.out.print("Age = ");
+    int age = sc.nextInt();
     if (age > 18) {
       System.out.println("Adult");
-    }
-    else {
+    } else {
       System.out.println("bacha");
     }
-    System.oit.println("Enter value odd and even so x = ");
-    if ( x % 2 == 0 ) {
+
+    // Odd or even
+    System.out.print("Enter value to check odd/even x = ");
+    int x = sc.nextInt();
+    if (x % 2 == 0) {
       System.out.println("Even");
+    } else {
+      System.out.println("Odd");
     }
-    else {
-      System.out.println("odd");
-    }
-    // if else if and else
-    System.out.println(" a is greater or b is lesseer or equal");
-    System.out.println(" a = ");
-    int a = Sc.nextInt();
-    System.out.println(" b = ");
-    int b = Sc.nextInt();
-    if ( a == b ) {
+
+    // Compare two numbers
+    System.out.println("a is greater or b is lesser or equal");
+    System.out.print("a = ");
+    int a2 = sc.nextInt();
+    System.out.print("b = ");
+    int b2 = sc.nextInt();
+    if (a2 == b2) {
       System.out.println("equally");
+    } else if (a2 > b2) {
+      System.out.println("a is greater");
+    } else {
+      System.out.println("b is lesser");
     }
-    else {
-      if ( a > b ) {
-        System.out.println(" a is greeter");
-      }
-      else {
-        System.out.println(" b is lesser");
-      }
-      //print the greeting
-      System.out.println(" click the button 123 your like ");
-      System.out.println(" button ");
-      int button = Sc.nextInt();
-      if (button == 1) {
-        System.out.println(" 1 number onse more onse more");
-      }
-      else if (button == 2) {
-          System.out.println("modi humse jyada to nhi hi kamata hoga or hoga to 2 number ka dhenda kar rha hoga ");
-        } 
-        else if (button == 3) {
-          System.out.println("tin bhai thino thabhai 🔥");
-        }
-        else {
-          System.out.println("idher ko dekh ke baat kar bhai 👀")
-        }
-       //but in my case you want to 20 button to make in code so Java create a new method switch
-       System.out.println("but in many case you want to 20 button to make in course Java create a new method");
-       System.out.println(" Button ");
-       Switch (button) {
-         case 1 : System.out.println("hellooooo how are you ");
-         break;
-         case 2 : System.out.println(" modi to gayga lekin 2026 me dunia khatam hai");
-         break;
-         case 3 : System.out.println(" tin pati");
-         default: System.out.println(" 👀👀👀👀👀");
-         
-       }
-        //make a calculator take two number a and BS follow edition subtraction multiplication division or module
-       System.out.println("make a calculator take two number a and BS follow edition subtraction multiplication division or module");
 
-        // addition karna
-        System.out.print(" ~  Enter a and b for addition + ");
-        System.out.print(" • a = ");
-        int a = sc.nextInt();
-        System.out.print("  • b = ");
-        int b = sc.nextInt();
-        int sum = a + b;
-        System.out.println("   Sum = " + sum);
+    // Button input with if/else and switch
+    System.out.println("Click the button (1, 2 or 3):");
+    System.out.print("button = ");
+    int button = sc.nextInt();
 
-        // subtraction karna
-        System.out.print("~   Enter a and b for subtraction - ");
-        System.out.print(" • a = ");
-        a = sc.nextInt();
-        System.out.print(" • b = ");
-        b = sc.nextInt();
-        int sub = a - b;
-        System.out.println("   Difference = " + sub);
-
-        // Multiplication
-        System.out.println("~    Enter your multiplication number *");
-        System.out.print(" • a = ");
-        a = sc.nextInt();
-        System.out.print(" • b = ");
-        b = sc.nextInt();
-        int mul = a * b;
-        System.out.println("   Product = " + mul);
-
-        // division
-        System.out.print("~    Enter your division number / ");
-        System.out.print(" • a = ");
-        a = sc.nextInt();
-        System.out.print(" • b = ");
-        b = sc.nextInt();
-        int div = a / b;
-        System.out.println("   Quotient = " + div);
-
-        // modulus
-        System.out.println("~   Enter your modulus number %");
-        System.out.print(" • a = ");
-        a = sc.nextInt();
-        System.out.print(" • b = ");
-        b = sc.nextInt();
-        int mod = a % b;
-        System.out.println("   Remainder = " + mod);
-        
-        //ask user to enter the number of the month and print the name of the month for example for print 1 January 2 to print a February
-
-        System.out.println("ask user to enter the number of the month and print the name of the month for example for print 1 January 2 to print a February");
-        Switch (button) {
-          case 1 : System.out.println(" january ");
-          case 2 : System.out.println(" February ");
-          case 3 : System.out.println(" March ");
-          case 4 : System.out.println(" april ");
-          case 5 : System.out.println(" may ");
-          case 6 : System.out.println(" june ");
-          case 7 : System.out.println(" july ");
-          case 8 : System.out.println(" August");
-          case 9 : System.out.println(" September");
-          case 10 : System.out.println(" October ");
-          case 11 : System.out.println(" November");
-          case 12 : System.out.println(" December");
-
-          System.out.println(" next part loops ");
-          
-        }
-          
+    if (button == 1) {
+      System.out.println("1 number once more");
+    } else if (button == 2) {
+      System.out.println("modi humse jyada to nhi hi kamata hoga or hoga to 2 number ka dhenda kar rha hoga");
+    } else if (button == 3) {
+      System.out.println("tin bhai thino thabhai 🔥");
+    } else {
+      System.out.println("idher ko dekh ke baat kar bhai 👀");
     }
+
+    System.out.println("Switch on button:");
+    switch (button) {
+      case 1:
+        System.out.println("hellooooo how are you ");
+        break;
+      case 2:
+        System.out.println("modi to gayga lekin 2026 me dunia khatam hai");
+        break;
+      case 3:
+        System.out.println("tin pati");
+        break;
+      default:
+        System.out.println("👀👀👀👀👀");
+        break;
+    }
+
+    // Calculator examples
+    System.out.println("Calculator demo - enter two numbers for each operation");
+
+    System.out.print("a = ");
+    int ca = sc.nextInt();
+    System.out.print("b = ");
+    int cb = sc.nextInt();
+    System.out.println("Sum = " + (ca + cb));
+
+    System.out.print("a = ");
+    ca = sc.nextInt();
+    System.out.print("b = ");
+    cb = sc.nextInt();
+    System.out.println("Difference = " + (ca - cb));
+
+    System.out.print("a = ");
+    ca = sc.nextInt();
+    System.out.print("b = ");
+    cb = sc.nextInt();
+    System.out.println("Product = " + (ca * cb));
+
+    System.out.print("a = ");
+    ca = sc.nextInt();
+    System.out.print("b = ");
+    cb = sc.nextInt();
+    if (cb != 0) {
+      System.out.println("Quotient = " + (ca / cb));
+    } else {
+      System.out.println("Cannot divide by zero");
+    }
+
+    System.out.print("a = ");
+    ca = sc.nextInt();
+    System.out.print("b = ");
+    cb = sc.nextInt();
+    if (cb != 0) {
+      System.out.println("Remainder = " + (ca % cb));
+    } else {
+      System.out.println("Cannot modulo by zero");
+    }
+
+    // Month name from number
+    System.out.print("Enter month number (1-12): ");
+    int m = sc.nextInt();
+    switch (m) {
+      case 1: System.out.println("January"); break;
+      case 2: System.out.println("February"); break;
+      case 3: System.out.println("March"); break;
+      case 4: System.out.println("April"); break;
+      case 5: System.out.println("May"); break;
+      case 6: System.out.println("June"); break;
+      case 7: System.out.println("July"); break;
+      case 8: System.out.println("August"); break;
+      case 9: System.out.println("September"); break;
+      case 10: System.out.println("October"); break;
+      case 11: System.out.println("November"); break;
+      case 12: System.out.println("December"); break;
+      default: System.out.println("Invalid month number"); break;
+    }
+
+    sc.close();
   }
 }
